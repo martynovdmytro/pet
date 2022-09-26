@@ -13,17 +13,20 @@
 <header>
 
 </header>
+
 <nav class="container-fluid">
     <div>
 
     </div>
 </nav>
-<section class="container-fluid content-box">
-    <div class="col-9 left-content-box">
+<section class="container-fluid">
+    <div class="row col-12 content-box-parent">
+        <div class="col-9 content-box-left">
 
-    </div>
-    <div class="col-3 offset-9 right-content-box">
+        </div>
+        <div class="col-3 content-box-right">
 
+        </div>
     </div>
 </section>
 

@@ -4,9 +4,9 @@ header{
     background-color: #0c63e4;
 }
 
-.content-box{
+section{
     background-color: gray;
-    min-height: 580px;
+    min-height: 520px;
 }
 
 nav{
@@ -14,13 +14,21 @@ nav{
     background-color: red;
 }
 
-.left-content-box{
+.content-box-parent{
+    margin-left: 2px;
+}
+
+.content-box-left{
+    width: 72%;
     min-height: 500px;
+    margin: 10px;
     background-color: pink;
 }
 
-.right-content-box{
+.content-box-right{
+    width: 25%;
     min-height: 500px;
+    margin: 10px;
     background-color: deeppink;
 
 }
