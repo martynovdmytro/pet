@@ -13,6 +13,19 @@
 <header>
 
 </header>
+<nav class="container-fluid">
+    <div>
+
+    </div>
+</nav>
+<section class="container-fluid content-box">
+    <div class="col-9 left-content-box">
+
+    </div>
+    <div class="col-3 offset-9 right-content-box">
+
+    </div>
+</section>
 
 <footer>
 
