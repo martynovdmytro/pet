@@ -16,7 +16,7 @@ header{
     margin: 4px;
 }
 
-.header-background{
+.top-banner{
     border-color: #d7d8da;
     border-style: solid;
     height: 90px;
@@ -29,7 +29,6 @@ nav{
 }
 
 section{
-    background-color: gray;
     min-height: 520px;
 }
 
@@ -41,19 +40,21 @@ section{
     width: 72%;
     min-height: 500px;
     margin: 10px;
-    background-color: pink;
+    border-style: solid;
+    border-color: pink;
 }
 
 .content-box-right{
     width: 25%;
     min-height: 500px;
     margin: 10px;
-    background-color: deeppink;
+    border-style: solid;
+    border-color: deeppink;
 
 }
 
 footer{
     width: 100%;
     height: 40px;
-    background-color: #a52834;
+    background-color: lightgray;
 }

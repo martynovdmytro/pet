@@ -16,8 +16,8 @@
             <div class="col-3 site-logo">
                 TODO: SITE LOGO
             </div>
-            <div class="col-9 header-background">
-                TODO: TOP BACKGROUND IMAGE
+            <div class="col-9 top-banner">
+                TODO: TOP BANNER
             </div>
         </div>
     </div>
