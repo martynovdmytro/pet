@@ -12,20 +12,20 @@
 <body>
 <header>
     <div class="container-fluid">
-        <div class="row col-md-12 header-container">
-            <div class="col-md-3 site-logo">
+        <div class="row col-12 header-container">
+            <div class="col-3 site-logo">
                 TODO: SITE LOGO
             </div>
-            <div class="col-md-9 header-background">
+            <div class="col-9 header-background">
                 TODO: TOP BACKGROUND IMAGE
             </div>
         </div>
     </div>
 </header>
 
-<nav class="container-fluid">
-    <div class="navbar nav-bar-parent">
-
+<nav class="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
     </div>
 </nav>
 <section class="container-fluid">
