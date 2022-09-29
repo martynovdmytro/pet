@@ -1,17 +1,42 @@
 header{
     width: 100%;
     height: 100px;
-    background-color: #0c63e4;
 }
 
-section{
-    background-color: gray;
-    min-height: 520px;
+.header-container{
+    margin: auto;
+    padding: inherit;
+}
+
+.site-logo{
+    border-color: #20c997;
+    border-style: solid;
+    height: 90px;
+    width: 23%;
+    margin: 4px;
+}
+
+.header-background{
+    border-color: #d7d8da;
+    border-style: solid;
+    height: 90px;
+    width: 75%;
+    margin: 4px;
 }
 
 nav{
     min-height: 60px;
     background-color: red;
+}
+
+.nav-bar-parent{
+    min-height: 50px;
+    background-color: #31d2f2;
+}
+
+section{
+    background-color: gray;
+    min-height: 520px;
 }
 
 .content-box-parent{

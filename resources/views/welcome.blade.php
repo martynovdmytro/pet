@@ -11,11 +11,20 @@
 </head>
 <body>
 <header>
-
+    <div class="container-fluid">
+        <div class="row col-md-12 header-container">
+            <div class="col-md-3 site-logo">
+                TODO: SITE LOGO
+            </div>
+            <div class="col-md-9 header-background">
+                TODO: TOP BACKGROUND IMAGE
+            </div>
+        </div>
+    </div>
 </header>
 
 <nav class="container-fluid">
-    <div>
+    <div class="navbar nav-bar-parent">
 
     </div>
 </nav>
