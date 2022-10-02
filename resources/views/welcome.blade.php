@@ -28,23 +28,23 @@
     <div class="container-fluid">
         <div class="row col-12 nav-base">
             <div class="row col-5 nav-container">
-                <div class="col-2 nav-button">
+                <div class="nav-button">
                     Graffiti
                 </div>
-                <div class="col-2 nav-button">
+                <div class="nav-button">
                     Street Art
                 </div>
-                <div class="col-2 nav-button">
+                <div class="nav-button">
                     Calligraphy
                 </div>
-                <div class="col-2 nav-button">
+                <div class="nav-button">
                     Sketch
                 </div>
-                <div class="col-2 nav-button">
+                <div class="nav-button">
                     Videos
                 </div>
             </div>
-            <div class="col-3 offset-1 nav-search">
+            <div class="col-3 nav-search">
                 Search Bar
             </div>
             <div class="col-3 nav-userbar">
