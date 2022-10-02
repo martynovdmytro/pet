@@ -28,6 +28,37 @@ nav{
     min-height: 60px;
 }
 
+.nav-base{
+    background-color: black;
+    margin: auto;
+}
+
+.nav-container{
+    display: flex;
+    height: 50px;
+}
+
+.nav-button{
+    height: 45px;
+    border-color: white;
+    border-style: solid;
+    text-align: center;
+    color: white;
+    margin: 1px;
+}
+
+.nav-search{
+    border-color: white;
+    border-style: solid;
+    color: white;
+}
+
+.nav-userbar{
+    border-color: white;
+    border-style: solid;
+    color: white;
+}
+
 section{
     min-height: 520px;
 }

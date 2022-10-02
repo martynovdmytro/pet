@@ -18,6 +18,7 @@
             </div>
             <div class="col-9 top-banner">
                 TODO: TOP BANNER
+
             </div>
         </div>
     </div>
@@ -25,7 +26,31 @@
 
 <nav class="navbar">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <div class="row col-12 nav-base">
+            <div class="row col-5 nav-container">
+                <div class="col-2 nav-button">
+                    Graffiti
+                </div>
+                <div class="col-2 nav-button">
+                    Street Art
+                </div>
+                <div class="col-2 nav-button">
+                    Calligraphy
+                </div>
+                <div class="col-2 nav-button">
+                    Sketch
+                </div>
+                <div class="col-2 nav-button">
+                    Videos
+                </div>
+            </div>
+            <div class="col-3 offset-1 nav-search">
+                Search Bar
+            </div>
+            <div class="col-3 nav-userbar">
+                Username
+            </div>
+        </div>
     </div>
 </nav>
 <section class="container-fluid">
