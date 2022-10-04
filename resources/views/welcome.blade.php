@@ -24,63 +24,28 @@
     </div>
 </header>
 
-<nav class="navbar">
-    <div class="container-fluid">
-        <div class="row col-12 nav-base">
-            <div class="row col-5 nav-container">
-                <div class="nav-button">
-                    <button class="button-53">
-                        <h4>Graffiti</h4>
-                    </button>
-                </div>
-                <div class="nav-button">
-                    <button class="button-53">
-                        <h4>Street Art</h4>
-                    </button>
-                </div>
-                <div class="nav-button">
-                    <button class="button-53">
-                        <h4>Calligraphy</h4>
-                    </button>
-                </div>
-                <div class="nav-button">
-                    <button class="button-53">
-                        <h4>Sketch</h4>
-                    </button>
-                </div>
-                <div class="nav-button">
-                    <button class="button-53">
-                        <h4>Videos</h4>
-                    </button>
-                </div>
-            </div>
-            <div class="col-3 nav-search">
-                Search Bar
-            </div>
-            <div class="col-3 nav-userbar">
-                Username
-            </div>
-        </div>
-    </div>
-</nav>
-<section class="container-fluid">
-    <div class="row col-12 content-box-parent">
-        <div class="col-9 content-box-left">
-
-        </div>
-        <div class="col-3 content-box-right">
-
-        </div>
-    </div>
-</section>
-
 <div id="app">
-    <example-component />
+    <nav class="navbar">
+        <navbar></navbar>
+    </nav>
+    <section class="container-fluid">
+        <div class="row col-12 content-box-parent">
+            <content-box-left></content-box-left>
+            <content-box-right></content-box-right>
+        </div>
+    </section>
 </div>
-
 <footer>
-<script src="{{ mix('/js/app.js') }}"></script>
+<script src="{{ asset('/js/app.js') }}"></script>
 
 </footer>
 </body>
 </html>
+<script>
+    import Navbar from "../js/components/Navbar/Navbar";
+    import ContentBoxLeft from "../js/components/ContentBoxLeft";
+    import ContentBoxRight from "../js/components/ContentBoxRight";
+    export default {
+        components: {ContentBoxRight, ContentBoxLeft, Navbar}
+    }
+</script>

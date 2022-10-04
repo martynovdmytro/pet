@@ -19,7 +19,9 @@ window.Vue = require('vue').default;
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('navbar', require('./components/Navbar.vue').default);
+Vue.component('content-box-left', require('./components/ContentBoxLeft.vue').default);
+Vue.component('content-box-right', require('./components/ContentBoxRight.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -30,3 +32,4 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
 });
+
