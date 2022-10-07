@@ -23,29 +23,27 @@
         </div>
     </div>
 </header>
-
 <div id="app">
-    <nav class="navbar">
-        <navbar></navbar>
-    </nav>
-    <section class="container-fluid">
-        <div class="row col-12 content-box-parent">
-            <content-box-left></content-box-left>
-            <content-box-right></content-box-right>
-        </div>
-    </section>
+    <router-link to="/">Home</router-link>
+    <router-link to="/about">About</router-link>
+
+    <router-view></router-view>
 </div>
+
+{{--<div id="app">--}}
+{{--    <nav class="navbar">--}}
+{{--        <navbar></navbar>--}}
+{{--    </nav>--}}
+{{--    <section class="container-fluid">--}}
+{{--        <div class="row col-12 content-box-parent">--}}
+{{--            <content-box-left></content-box-left>--}}
+{{--            <content-box-right></content-box-right>--}}
+{{--        </div>--}}
+{{--    </section>--}}
+{{--</div>--}}
 <footer>
-<script src="{{ asset('/js/app.js') }}"></script>
+<script src="{{ asset('./js/app.js') }}"></script>
 
 </footer>
 </body>
 </html>
-<script>
-    import Navbar from "../js/components/Navbar/Navbar";
-    import ContentBoxLeft from "../js/components/ContentBoxLeft";
-    import ContentBoxRight from "../js/components/ContentBoxRight";
-    export default {
-        components: {ContentBoxRight, ContentBoxLeft, Navbar}
-    }
-</script>
