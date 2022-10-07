@@ -21,10 +21,6 @@
         <navbar-component></navbar-component>
     </nav>
 
-    <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
-    <router-link to="/valera">Valera</router-link>
-
     <section class="container-fluid">
         <div class="row col-12 content-box-parent">
             <content-box-left></content-box-left>
