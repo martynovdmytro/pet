@@ -1,5 +1,6 @@
-import Home from "./Home";
-import About from "./About";
+import Home from "./components/Home";
+import About from "./components/About";
+import Valera from "./components/Valera";
 
 export default {
     mode: "history",
@@ -12,6 +13,10 @@ export default {
         {
             path: '/about',
             component: About
+        },
+        {
+            path: '/valera',
+            component: Valera
         }
     ]
 }
