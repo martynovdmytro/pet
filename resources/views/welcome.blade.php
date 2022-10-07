@@ -10,41 +10,34 @@
     <title>Document</title>
 </head>
 <body>
-<header>
-    <div class="container-fluid">
-        <div class="row col-12 header-container">
-            <div class="col-3 site-logo">
-                TODO: SITE LOGO
-            </div>
-            <div class="col-9 top-banner">
-                TODO: TOP BANNER
 
-            </div>
-        </div>
-    </div>
-</header>
 <div id="app">
+
+    <header>
+        <header-component></header-component>
+    </header>
+
+    <nav class="navbar">
+        <navbar-component></navbar-component>
+    </nav>
+
     <router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link>
     <router-link to="/valera">Valera</router-link>
 
-    <router-view></router-view>
+    <section class="container-fluid">
+        <div class="row col-12 content-box-parent">
+            <content-box-left></content-box-left>
+            <content-box-right></content-box-right>
+        </div>
+    </section>
+
 </div>
 
-{{--<div id="app">--}}
-{{--    <nav class="navbar">--}}
-{{--        <navbar></navbar>--}}
-{{--    </nav>--}}
-{{--    <section class="container-fluid">--}}
-{{--        <div class="row col-12 content-box-parent">--}}
-{{--            <content-box-left></content-box-left>--}}
-{{--            <content-box-right></content-box-right>--}}
-{{--        </div>--}}
-{{--    </section>--}}
-{{--</div>--}}
 <footer>
 <script src="{{ asset('./js/app.js') }}"></script>
 
 </footer>
+
 </body>
 </html>
