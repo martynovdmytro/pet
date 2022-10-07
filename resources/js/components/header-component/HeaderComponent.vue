@@ -10,3 +10,5 @@
     </div>
   </div>
 </template>
+
+<style src="./css/header-component.css" ref="stylesheet"></style>

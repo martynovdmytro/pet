@@ -37,3 +37,5 @@
     </div>
   </div>
 </template>
+
+<style src="./css/navbar-component.css" ref="stylesheet"></style>

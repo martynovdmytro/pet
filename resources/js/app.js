@@ -11,10 +11,10 @@ import routes from "./routes";
 
 Vue.use(VueRouter);
 
-Vue.component('header-component', require('./components/HeaderComponent.vue').default);
-Vue.component('navbar-component', require('./components/NavbarComponent.vue').default);
-Vue.component('content-box-left', require('./components/ContentBoxLeft.vue').default);
-Vue.component('content-box-right', require('./components/ContentBoxRight.vue').default);
+Vue.component('header-component', require('./components/header-component/HeaderComponent.vue').default);
+Vue.component('navbar-component', require('./components/navbar-component/NavbarComponent.vue').default);
+Vue.component('content-box-left', require('./components/content-box-left/ContentBoxLeft.vue').default);
+Vue.component('content-box-right', require('./components/content-box-right/ContentBoxRight.vue').default);
 
 let app = new Vue({
     router: new VueRouter(routes),

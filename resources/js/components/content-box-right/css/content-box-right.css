@@ -1,0 +1,8 @@
+.content-box-right{
+    width: 25%;
+    min-height: 500px;
+    margin: 10px;
+    border-style: solid;
+    border-color: deeppink;
+
+}
