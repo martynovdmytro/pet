@@ -1,6 +1,6 @@
 <template>
   <div>
-    {{ zalupa }}
+    About
   </div>
 </template>
 

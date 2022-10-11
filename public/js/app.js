@@ -5363,7 +5363,7 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("div", [_vm._v("\n  " + _vm._s(_vm.zalupa) + "\n")]);
+  return _c("div", [_vm._v("\n  About\n")]);
 };
 
 var staticRenderFns = [];
@@ -5622,12 +5622,7 @@ vue__WEBPACK_IMPORTED_MODULE_2__["default"].component('content-box-left', (__web
 vue__WEBPACK_IMPORTED_MODULE_2__["default"].component('content-box-right', (__webpack_require__(/*! ./components/content-box-right/ContentBoxRight.vue */ "./resources/js/components/content-box-right/ContentBoxRight.vue")["default"]));
 var app = new vue__WEBPACK_IMPORTED_MODULE_2__["default"]({
   router: new vue_router__WEBPACK_IMPORTED_MODULE_3__["default"](_routes__WEBPACK_IMPORTED_MODULE_1__["default"]),
-  el: '#app',
-  mounted: function mounted() {
-    axios__WEBPACK_IMPORTED_MODULE_0___default().get('/about').then(function (response) {
-      return console.log(response);
-    });
-  }
+  el: '#app'
 });
 
 /***/ }),
