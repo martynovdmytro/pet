@@ -1,3 +1,5 @@
+import axios from "axios";
+
 require('./bootstrap');
 
 import Vue from "vue";
@@ -11,6 +13,8 @@ import routes from "./routes";
 
 Vue.use(VueRouter);
 
+Vue.config.devtools = true // should be deleted when dev is finished
+
 Vue.component('header-component', require('./components/header-component/HeaderComponent.vue').default);
 Vue.component('navbar-component', require('./components/navbar-component/NavbarComponent.vue').default);
 Vue.component('content-box-left', require('./components/content-box-left/ContentBoxLeft.vue').default);
@@ -19,4 +23,8 @@ Vue.component('content-box-right', require('./components/content-box-right/Conte
 let app = new Vue({
     router: new VueRouter(routes),
     el: '#app',
+
+    mounted(){
+        axios.get('/about').then(response => console.log(response));
+    }
 });
