@@ -15,18 +15,18 @@ export default {
   },
   methods: {
     getData(){
-      axios.get('http://pet.local/api/about')
-          .then(function (response) {
-            // handle success
-            console.log(response.data)
-          });
 
-      return "PIZDA"
+      axios({
+        url: 'http://pet.local/api/about',
+        method: 'get',
+      }).then(function (response) {
+        console.log(response);
+      });
     }
 
   },
   created() {
-    this.zalupa = this.getData();
+    this.getData();
   }
 }
 </script>
