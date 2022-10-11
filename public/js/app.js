@@ -5317,11 +5317,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      zalupa: null
+    };
+  },
+  methods: {
+    getData: function getData() {
+      axios__WEBPACK_IMPORTED_MODULE_0___default().get('http://pet.local/api/about').then(function (response) {
+        // handle success
+        console.log(response.data);
+      });
+      return "PIZDA";
+    }
+  },
   created: function created() {
-    axios__WEBPACK_IMPORTED_MODULE_0___default().get('http://pet.local/api/about').then(function (response) {
-      // handle success
-      console.log(response.data);
-    });
+    this.zalupa = this.getData();
   }
 });
 
@@ -5363,7 +5374,7 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("div", [_vm._v("\n  About\n")]);
+  return _c("div", [_vm._v("\n  " + _vm._s(_vm.zalupa) + "\n")]);
 };
 
 var staticRenderFns = [];
@@ -5596,13 +5607,9 @@ render._withStripped = true;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./routes */ "./resources/js/routes.js");
-
-
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./routes */ "./resources/js/routes.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
@@ -5610,18 +5617,19 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 /*
     MAIN VUE ASSEMBLING
-    Component registration via Vue.component('component-name', require('./components/ComponentName.vue).default)
+    New component registration:
+    Vue.component('component-name', require('./components/ComponentName.vue).default);
  */
 
-vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_3__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_2__["default"].config.devtools = true; // should be deleted when dev is finished
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].config.devtools = true; // should be deleted when dev is finished
 
-vue__WEBPACK_IMPORTED_MODULE_2__["default"].component('header-component', (__webpack_require__(/*! ./components/header-component/HeaderComponent.vue */ "./resources/js/components/header-component/HeaderComponent.vue")["default"]));
-vue__WEBPACK_IMPORTED_MODULE_2__["default"].component('navbar-component', (__webpack_require__(/*! ./components/navbar-component/NavbarComponent.vue */ "./resources/js/components/navbar-component/NavbarComponent.vue")["default"]));
-vue__WEBPACK_IMPORTED_MODULE_2__["default"].component('content-box-left', (__webpack_require__(/*! ./components/content-box-left/ContentBoxLeft.vue */ "./resources/js/components/content-box-left/ContentBoxLeft.vue")["default"]));
-vue__WEBPACK_IMPORTED_MODULE_2__["default"].component('content-box-right', (__webpack_require__(/*! ./components/content-box-right/ContentBoxRight.vue */ "./resources/js/components/content-box-right/ContentBoxRight.vue")["default"]));
-var app = new vue__WEBPACK_IMPORTED_MODULE_2__["default"]({
-  router: new vue_router__WEBPACK_IMPORTED_MODULE_3__["default"](_routes__WEBPACK_IMPORTED_MODULE_1__["default"]),
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('header-component', (__webpack_require__(/*! ./components/header-component/HeaderComponent.vue */ "./resources/js/components/header-component/HeaderComponent.vue")["default"]));
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('navbar-component', (__webpack_require__(/*! ./components/navbar-component/NavbarComponent.vue */ "./resources/js/components/navbar-component/NavbarComponent.vue")["default"]));
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('content-box-left', (__webpack_require__(/*! ./components/content-box-left/ContentBoxLeft.vue */ "./resources/js/components/content-box-left/ContentBoxLeft.vue")["default"]));
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('content-box-right', (__webpack_require__(/*! ./components/content-box-right/ContentBoxRight.vue */ "./resources/js/components/content-box-right/ContentBoxRight.vue")["default"]));
+var app = new vue__WEBPACK_IMPORTED_MODULE_1__["default"]({
+  router: new vue_router__WEBPACK_IMPORTED_MODULE_2__["default"](_routes__WEBPACK_IMPORTED_MODULE_0__["default"]),
   el: '#app'
 });
 

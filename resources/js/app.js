@@ -1,5 +1,3 @@
-import axios from "axios";
-
 require('./bootstrap');
 
 import Vue from "vue";
@@ -8,7 +6,8 @@ import routes from "./routes";
 
 /*
     MAIN VUE ASSEMBLING
-    Component registration via Vue.component('component-name', require('./components/ComponentName.vue).default)
+    New component registration:
+    Vue.component('component-name', require('./components/ComponentName.vue).default);
  */
 
 Vue.use(VueRouter);

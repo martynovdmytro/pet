@@ -1,6 +1,6 @@
 <template>
   <div>
-    About
+    {{ zalupa }}
   </div>
 </template>
 
@@ -8,12 +8,25 @@
 import axios from "axios";
 
 export default {
+  data(){
+    return {
+      zalupa: null,
+    }
+  },
+  methods: {
+    getData(){
+      axios.get('http://pet.local/api/about')
+          .then(function (response) {
+            // handle success
+            console.log(response.data)
+          });
+
+      return "PIZDA"
+    }
+
+  },
   created() {
-    axios.get('http://pet.local/api/about')
-        .then(function (response) {
-          // handle success
-          console.log(response.data);
-        });
+    this.zalupa = this.getData();
   }
 }
 </script>
