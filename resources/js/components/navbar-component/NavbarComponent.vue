@@ -3,25 +3,28 @@
     <div class="row col-12 nav-base">
       <div class="row col-5 nav-container">
         <div class="nav-categories">
-          <router-link to="/">
-            <div class="nav-link-element">Graffiti</div>
-          </router-link>
-        </div>
-        <div class="nav-dropdown hide">
-          <ul>
-            <li class="nav-dropdown-item">zalupa</li>
-            <li class="nav-dropdown-item">pizda</li>
-            <li class="nav-dropdown-item">gavno</li>
-          </ul>
+          <div id="graffiti">
+            <router-link to="/graffiti">
+              <div class="nav-link-element">Graffiti</div>
+            </router-link>
+          </div>
+          <div class="nav-dropdown hide">
+            <drop-down></drop-down>
+          </div>
         </div>
         <div class="nav-categories">
-          <router-link to="/about">
-            <div class="nav-link-element">About</div>
-          </router-link>
+          <div>
+            <router-link to="/art">
+              <div class="nav-link-element">Art</div>
+            </router-link>
+          </div>
+          <div class="nav-dropdown hide">
+            <drop-down></drop-down>
+          </div>
         </div>
         <div class="nav-categories">
-          <router-link to="/valera">
-            <div class="nav-link-element">Valera</div>
+          <router-link to="/street-art">
+            <div class="nav-link-element">Street Art</div>
           </router-link>
         </div>
       </div>
@@ -36,20 +39,26 @@
 </template>
 
 <script>
+import DropDown from "./template/DropDown";
+
 export default {
+  components: {
+    DropDown
+  },
   data() {
     return {
-      categories: 'foo'
+      categories: null
     }
   },
+  created() {
+
+  },
   mounted() {
-    $(document).on("click", ".nav-categories", function () {
-      $(".nav-dropdown").toggleClass("hide");
-    });
+    // TODO: jQuery events
   },
   methods: {
 
-  },
+  }
 }
 </script>
 
