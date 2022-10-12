@@ -24,7 +24,6 @@ export default {
       }).then(response => {
         this.foo = response.data
       });
-
     }
   }
 }
