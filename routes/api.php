@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('about', function (){
-    return json_encode('zalupa');
+    return 'zalupa';
 });

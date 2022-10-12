@@ -35,4 +35,20 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      categories: 'foo'
+    }
+  },
+  mounted() {
+
+  },
+  methods: {
+
+  },
+}
+</script>
+
 <style src="./css/navbar-component.css" ref="stylesheet"></style>
