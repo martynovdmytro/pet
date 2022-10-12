@@ -1,6 +1,6 @@
 <template>
   <div>
-    {{ zalupa }}
+    {{ foo }}
   </div>
 </template>
 
@@ -10,23 +10,22 @@ import axios from "axios";
 export default {
   data(){
     return {
-      zalupa: null,
+      foo: null
     }
-  },
-  methods: {
-    getData(){
-
-      axios({
-        url: 'http://pet.local/api/about',
-        method: 'get',
-      }).then(function (response) {
-        console.log(response);
-      });
-    }
-
   },
   created() {
     this.getData();
+  },
+  methods: {
+    getData(){
+      axios({
+        url: 'http://pet.local/api/about',
+        method: 'get',
+      }).then(response => {
+        this.foo = response.data
+      });
+
+    }
   }
 }
 </script>

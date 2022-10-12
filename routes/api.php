@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('about', function (){
-    return ['pizda', 'zalupa', 'xyu'];
+    return json_encode('pizda');
 });
