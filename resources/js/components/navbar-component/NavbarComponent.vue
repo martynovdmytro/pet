@@ -14,6 +14,7 @@
             <li class="nav-dropdown-item">gavno</li>
           </ul>
         </div>
+
         <div class="nav-categories">
           <router-link to="/about">
             <div class="nav-link-element">About</div>
