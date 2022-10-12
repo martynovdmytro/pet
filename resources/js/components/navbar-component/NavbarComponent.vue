@@ -7,14 +7,13 @@
             <div class="nav-link-element">Graffiti</div>
           </router-link>
         </div>
-        <div class="nav-dropdown">
+        <div class="nav-dropdown hide">
           <ul>
             <li class="nav-dropdown-item">zalupa</li>
             <li class="nav-dropdown-item">pizda</li>
             <li class="nav-dropdown-item">gavno</li>
           </ul>
         </div>
-
         <div class="nav-categories">
           <router-link to="/about">
             <div class="nav-link-element">About</div>
@@ -44,7 +43,9 @@ export default {
     }
   },
   mounted() {
-
+    $(document).on("click", ".nav-categories", function () {
+      $(".nav-dropdown").toggleClass("hide");
+    });
   },
   methods: {
 

@@ -4,6 +4,9 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import routes from "./routes";
 
+window.$ = window.jQuery = require('jquery')
+
+
 /*
     MAIN VUE ASSEMBLING
     New component registration:
