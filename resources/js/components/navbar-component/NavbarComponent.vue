@@ -2,30 +2,27 @@
   <div class="container-fluid">
     <div class="row col-12 nav-base">
       <div class="row col-5 nav-container">
-        <div class="nav-button">
-          <button class="button-53">
-            <h4>Graffiti</h4>
-          </button>
+        <div class="nav-categories">
+          <router-link to="/">
+            <div class="nav-link-element">Graffiti</div>
+          </router-link>
         </div>
-        <div class="nav-button">
-          <button class="button-53">
-            <h4>Street Art</h4>
-          </button>
+        <div class="nav-dropdown">
+          <ul>
+            <li class="nav-dropdown-item">zalupa</li>
+            <li class="nav-dropdown-item">pizda</li>
+            <li class="nav-dropdown-item">gavno</li>
+          </ul>
         </div>
-        <div class="nav-button">
-          <button class="button-53">
-            <h4>Calligraphy</h4>
-          </button>
+        <div class="nav-categories">
+          <router-link to="/about">
+            <div class="nav-link-element">About</div>
+          </router-link>
         </div>
-        <div class="nav-button">
-          <button class="button-53">
-            <h4>Sketch</h4>
-          </button>
-        </div>
-        <div class="nav-button">
-          <button class="button-53">
-            <h4>Videos</h4>
-          </button>
+        <div class="nav-categories">
+          <router-link to="/valera">
+            <div class="nav-link-element">Valera</div>
+          </router-link>
         </div>
       </div>
       <div class="col-3 nav-search">
@@ -35,9 +32,6 @@
         Username
       </div>
     </div>
-    <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
-    <router-link to="/valera">Valera</router-link>
   </div>
 </template>
 
