@@ -4,9 +4,7 @@
       <div class="row col-5 nav-container">
         <div class="nav-categories">
           <div id="graffiti">
-            <router-link to="/graffiti">
-              <div class="nav-link-element">Graffiti</div>
-            </router-link>
+            <div class="nav-link-element">Graffiti</div>
           </div>
           <div class="nav-dropdown hide">
             <drop-down></drop-down>
@@ -14,18 +12,11 @@
         </div>
         <div class="nav-categories">
           <div>
-            <router-link to="/art">
-              <div class="nav-link-element">Art</div>
-            </router-link>
-          </div>
-          <div class="nav-dropdown hide">
-            <drop-down></drop-down>
+            <div class="nav-link-element">Art</div>
           </div>
         </div>
         <div class="nav-categories">
-          <router-link to="/street-art">
-            <div class="nav-link-element">Street Art</div>
-          </router-link>
+          <div class="nav-link-element">Street Art</div>
         </div>
       </div>
       <div class="col-3 nav-search">

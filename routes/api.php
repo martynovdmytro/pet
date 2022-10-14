@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('about', function (){
+Route::get('/', function (){
     return 'zalupa';
 });
