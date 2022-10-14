@@ -19,6 +19,7 @@ class CreateImagesTable extends Migration
             $table->integer('year');
             $table->foreignId('subcategory_id');
             $table->foreignId('artist_id');
+            $table->timestamp('created_at');
         });
     }
 
