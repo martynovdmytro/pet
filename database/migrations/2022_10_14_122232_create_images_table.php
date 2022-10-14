@@ -17,8 +17,8 @@ class CreateImagesTable extends Migration
             $table->id();
             $table->string('link');
             $table->integer('year');
-            $table->integer('subcategory_id');
-            $table->integer('artist_id');
+            $table->foreignId('subcategory_id');
+            $table->foreignId('artist_id');
         });
     }
 
