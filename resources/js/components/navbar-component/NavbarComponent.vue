@@ -4,7 +4,7 @@
       <div class="row col-5 nav-container">
         <div class="nav-categories">
           <div id="graffiti">
-            <div class="nav-link-element">Graffiti</div>
+            <div class="nav-link-element">{{ categories }}</div>
           </div>
           <div class="nav-dropdown hide">
             <drop-down></drop-down>
@@ -33,19 +33,16 @@
 import DropDown from "./template/DropDown";
 
 export default {
-  components: {
+  component: {
     DropDown
   },
-  data() {
+  data () {
     return {
-      categories: null
+      categories: 'pizda'
     }
   },
   created() {
 
-  },
-  mounted() {
-    // TODO: jQuery events
   },
   methods: {
 

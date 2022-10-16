@@ -25,10 +25,4 @@ Vue.component('content-box-right', require('./components/content-box-right/Conte
 let app = new Vue({
     router: new VueRouter(routes),
     el: '#app',
-    data(){
-        return {
-            zalupa: 'pizda'
-        }
-    }
-
 });
