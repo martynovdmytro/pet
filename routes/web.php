@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/{any?}', 'welcome', [
+Route::view('/{any?}', 'index', [
     'category' => CategoryController::index()
+]);
+
+Route::view('/admin/admin/{any?}', 'admin', [
+    // TODO: отредактировать линк
+//    'category' => CategoryController::index()
 ]);
