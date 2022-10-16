@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/{any?}', 'welcome', [
-    'foo' => 'bar'
+    'category' => CategoryController::index()
 ]);
+
+//Route::get('/{any?}', function () {
+//    return view('welcome', [
+//        'category' => CategoryController::index()
+//    ]);
+//});

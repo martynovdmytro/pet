@@ -10,6 +10,7 @@
     <title>Document</title>
 </head>
 <body>
+{{ var_dump($category) }}
 
 <div id="app">
 
