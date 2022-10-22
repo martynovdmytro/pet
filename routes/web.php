@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/{any?}', 'index', [
-    'category' => CategoryController::index()
+    'categories' => CategoryController::index()
 ]);
 
 Route::view('/admin/admin/{any?}', 'admin', [

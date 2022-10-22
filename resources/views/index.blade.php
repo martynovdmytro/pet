@@ -10,7 +10,15 @@
     <title>Document</title>
 </head>
 <body>
-{{ var_dump($category) }}
+{{--<pre>--}}
+{{--    <div>--}}
+{{--        @foreach($categories as $category)--}}
+{{--            <ul>--}}
+{{--                <li>{{ $category->name }}</li>--}}
+{{--            </ul>--}}
+{{--        @endforeach--}}
+{{--    </div>--}}
+{{--</pre>--}}
 
 <div id="app">
 
@@ -19,7 +27,7 @@
     </header>
 
     <nav class="navbar">
-        <navbar-component></navbar-component>
+        <navbar-component :categories="{{ $categories }}"></navbar-component>
     </nav>
 
     <section class="container-fluid">

@@ -1,22 +1,14 @@
 <template>
   <div class="container-fluid">
     <div class="row col-12 nav-base">
-      <div class="row col-5 nav-container">
+      <div v-for="category in categories" class="row col-5 nav-container">
         <div class="nav-categories">
           <div id="graffiti">
-            <div class="nav-link-element">{{ categories }}</div>
+            <div class="nav-link-element">{{ category.name }}</div>
           </div>
           <div class="nav-dropdown hide">
-            <drop-down></drop-down>
+<!--            <drop-down></drop-down>-->
           </div>
-        </div>
-        <div class="nav-categories">
-          <div>
-            <div class="nav-link-element">Art</div>
-          </div>
-        </div>
-        <div class="nav-categories">
-          <div class="nav-link-element">Street Art</div>
         </div>
       </div>
       <div class="col-3 nav-search">
@@ -30,15 +22,14 @@
 </template>
 
 <script>
-import DropDown from "./template/DropDown";
 
 export default {
+  props: ['categories'],
   component: {
-    DropDown
+
   },
   data () {
     return {
-      categories: 'pizda'
     }
   },
   created() {
@@ -46,6 +37,9 @@ export default {
   },
   methods: {
 
+  },
+  mounted() {
+    console.log(this.categories)
   }
 }
 </script>

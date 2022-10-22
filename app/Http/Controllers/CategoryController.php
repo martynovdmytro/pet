@@ -14,7 +14,7 @@ class CategoryController extends Controller
      */
     public static function index()
     {
-        return 'pizda';
+        return Category::all();
     }
 
     /**
