@@ -14,11 +14,6 @@
     <header>
         <header-component></header-component>
     </header>
-{{--    @foreach($categories as $category)--}}
-{{--        <ul>--}}
-{{--            <li>{{ $category->subcategories }}</li>--}}
-{{--        </ul>--}}
-{{--    @endforeach--}}
 
     <nav class="navbar">
         <navbar-component :categories="{{ json_encode($categories) }}"></navbar-component>
