@@ -18,6 +18,7 @@ class CreateArtistsTable extends Migration
             $table->string('name')
                   ->unique()
                   ->index();
+            $table->text('bio');
         });
     }
 
