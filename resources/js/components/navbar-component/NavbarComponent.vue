@@ -1,13 +1,13 @@
 <template>
   <div class="container-fluid">
     <div class="row col-12 nav-base">
-      <div v-for="category in categories" class="row col-5 nav-container">
-        <div class="nav-categories">
-          <div id="graffiti">
+      <div class="row col-5 nav-container">
+        <div v-for="category in categories" class="nav-categories">
+          <div :id="category.name">
             <div class="nav-link-element">{{ category.name }}</div>
           </div>
           <div class="nav-dropdown hide">
-<!--            <drop-down></drop-down>-->
+            <drop-down></drop-down>
           </div>
         </div>
       </div>

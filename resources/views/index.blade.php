@@ -10,16 +10,6 @@
     <title>Document</title>
 </head>
 <body>
-{{--<pre>--}}
-{{--    <div>--}}
-{{--        @foreach($categories as $category)--}}
-{{--            <ul>--}}
-{{--                <li>{{ $category->name }}</li>--}}
-{{--            </ul>--}}
-{{--        @endforeach--}}
-{{--    </div>--}}
-{{--</pre>--}}
-
 <div id="app">
 
     <header>
