@@ -7,7 +7,7 @@
             <div class="nav-link-element">{{ category.name }}</div>
           </div>
           <div class="nav-dropdown hide">
-            <drop-down></drop-down>
+<!--            <drop-down></drop-down>-->
           </div>
         </div>
       </div>
@@ -37,9 +37,6 @@ export default {
   },
   methods: {
 
-  },
-  mounted() {
-    console.log(this.categories)
   }
 }
 </script>
