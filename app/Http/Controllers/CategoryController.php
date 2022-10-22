@@ -8,22 +8,24 @@ use Illuminate\Http\Request;
 class CategoryController extends Controller
 {
     /**
-     * Display a listing of the resource.
      *
+     * Returns array collections of categories and subcategories from related tables
+     *
+     * @param $response
      * @return \Illuminate\Http\Response
      */
     public static function index()
     {
-        $result = array();
+        $response = array();
 
         $categories = Category::all();
 
         foreach ($categories as $category) {
-            $result['categories'][] = $category;
-            $result['subcategories'][] = $category->subcategories;
+            $response['categories'][] = $category;
+            $response['subcategories'][] = $category->subcategories;
         }
 
-        return $result;
+        return $response;
     }
 
     /**

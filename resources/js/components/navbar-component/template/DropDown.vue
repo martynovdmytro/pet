@@ -6,7 +6,9 @@
 
 <script>
 export default {
-  props: ['subcategories'],
+  props: [
+      'subcategories'
+  ],
   data(){
     return {
 
@@ -16,7 +18,7 @@ export default {
 
   },
   mounted() {
-    console.log(this.subcategories)
+
   }
 }
 </script>

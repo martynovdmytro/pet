@@ -28,7 +28,9 @@ export default {
   components: {
     DropDown
   },
-  props: ['categories'],
+  props: [
+      'categories'
+  ],
   component: {
 
   },
@@ -43,7 +45,7 @@ export default {
 
   },
   mounted() {
-    console.log(this.categories.subcategories)
+
   }
 }
 </script>
