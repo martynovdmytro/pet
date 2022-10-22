@@ -1,7 +1,22 @@
 <template>
   <ul>
-    <li class="nav-dropdown-item">zalupa</li>
-    <li class="nav-dropdown-item">pizda</li>
-    <li class="nav-dropdown-item">gavno</li>
+    <li v-for="subcategory in subcategories" class="nav-dropdown-item">{{ subcategory.name }}</li>
   </ul>
 </template>
+
+<script>
+export default {
+  props: ['subcategories'],
+  data(){
+    return {
+
+    }
+  },
+  methods: {
+
+  },
+  mounted() {
+    console.log(this.subcategories)
+  }
+}
+</script>

@@ -2,12 +2,12 @@
   <div class="container-fluid">
     <div class="row col-12 nav-base">
       <div class="row col-5 nav-container">
-        <div v-for="category in categories" class="nav-categories">
+        <div v-for="category in categories.categories" class="nav-categories">
           <div :id="category.name">
             <div class="nav-link-element">{{ category.name }}</div>
           </div>
-          <div class="nav-dropdown hide">
-<!--            <drop-down></drop-down>-->
+          <div class="nav-dropdown">
+            <drop-down :subcategories="category.subcategories"></drop-down>
           </div>
         </div>
       </div>
@@ -22,8 +22,12 @@
 </template>
 
 <script>
+import DropDown from "./template/DropDown";
 
 export default {
+  components: {
+    DropDown
+  },
   props: ['categories'],
   component: {
 
@@ -37,6 +41,9 @@ export default {
   },
   methods: {
 
+  },
+  mounted() {
+    console.log(this.categories.subcategories)
   }
 }
 </script>

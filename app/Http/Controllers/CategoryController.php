@@ -14,7 +14,16 @@ class CategoryController extends Controller
      */
     public static function index()
     {
-        return Category::all();
+        $result = array();
+
+        $categories = Category::all();
+
+        foreach ($categories as $category) {
+            $result['categories'][] = $category;
+            $result['subcategories'][] = $category->subcategories;
+        }
+
+        return $result;
     }
 
     /**

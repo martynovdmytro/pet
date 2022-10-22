@@ -11,13 +11,17 @@
 </head>
 <body>
 <div id="app">
-
     <header>
         <header-component></header-component>
     </header>
+{{--    @foreach($categories as $category)--}}
+{{--        <ul>--}}
+{{--            <li>{{ $category->subcategories }}</li>--}}
+{{--        </ul>--}}
+{{--    @endforeach--}}
 
     <nav class="navbar">
-        <navbar-component :categories="{{ $categories }}"></navbar-component>
+        <navbar-component :categories="{{ json_encode($categories) }}"></navbar-component>
     </nav>
 
     <section class="container-fluid">
