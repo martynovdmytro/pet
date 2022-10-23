@@ -2,7 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Artist;
 use App\Models\Category;
+use App\Models\Image;
 use App\Models\Subcategory;
 use Illuminate\Database\Seeder;
 
@@ -15,9 +17,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+
         Category::factory(5)
                 ->has(Subcategory::factory()
-                                 ->count(5))
+                    ->hasAttached(Image::factory()->count(5)
+                                                  ->hasAttached(Artist::factory()
+                                                                      ->hasAttached(Image::factory())))
+                    ->count(5))
                 ->create();
+
     }
 }

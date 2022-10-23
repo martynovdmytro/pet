@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSubcategoryImage extends Migration
+class CreateImageSubcategory extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateSubcategoryImage extends Migration
      */
     public function up()
     {
-        Schema::create('subcategory_image', function (Blueprint $table) {
+        Schema::create('image_subcategory', function (Blueprint $table) {
             $table->id();
             $table->foreignId('subcategory_id');
             $table->foreignId('image_id');
@@ -28,6 +28,6 @@ class CreateSubcategoryImage extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('subcategory_image');
+        Schema::dropIfExists('image_subcategory');
     }
 }

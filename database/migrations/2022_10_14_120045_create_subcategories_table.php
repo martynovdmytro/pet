@@ -18,7 +18,6 @@ class CreateSubcategoriesTable extends Migration
             $table->string('name');
             $table->string('slug');
             $table->foreignId('category_id');
-            $table->foreignId('image_id');
         });
     }
 
