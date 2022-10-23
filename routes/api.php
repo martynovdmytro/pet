@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SubcategoryController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function (){
-    return 'zalupa';
-});
+Route::apiResource('subcategory', SubcategoryController::class);
