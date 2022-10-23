@@ -16,16 +16,16 @@ class CategoryController extends Controller
      */
     public static function index()
     {
-//        $response = array();
-//
-//        $categories = Category::all();
-//
-//        foreach ($categories as $category) {
-//            $response['categories'][] = $category;
-//            $response['subcategories'][] = $category->subcategories;
-//        }
-//
-//        return json_encode($response);
+        $response = array();
+
+        $categories = Category::all();
+
+        foreach ($categories as $category) {
+            $response['categories'][] = $category;
+            $response['subcategories'][] = $category->subcategories;
+        }
+
+        return json_encode($response);
     }
 
     /**
