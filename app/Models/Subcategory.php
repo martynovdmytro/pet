@@ -16,4 +16,9 @@ class Subcategory extends Model
         return $this->belongsTo(Category::class);
 
     }
+
+    public function images() {
+        return $this->belongsToMany(Image::class);
+    }
+
 }

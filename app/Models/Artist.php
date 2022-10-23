@@ -11,4 +11,10 @@ class Artist extends Model
 
     public $timestamps = false;
 
+    public function images() {
+
+        return $this->belongsToMany(Image::class);
+
+    }
+
 }

@@ -8,4 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Image extends Model
 {
     use HasFactory;
+
+    public function subcategories() {
+
+        return $this->belongsToMany(Subcategory::class);
+
+    }
+
+    public function artists() {
+
+        return $this->belongsToMany(Artist::class);
+
+    }
 }
