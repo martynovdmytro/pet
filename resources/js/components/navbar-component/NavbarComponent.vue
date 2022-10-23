@@ -2,11 +2,9 @@
   <div class="container-fluid">
     <div class="row col-12 nav-base">
       <div class="row col-5 nav-container">
-        <div v-for="category in categories.categories" class="nav-categories">
-          <div :id="category.name">
-            <div class="nav-link-element">{{ category.name }}</div>
-          </div>
-          <div class="nav-dropdown">
+        <div v-for="category in categories.categories" class="nav-category" :category-id="category.id">
+          <div class="nav-link-element">{{ category.name }}</div>
+          <div class="nav-dropdown hide" :id="'dropdown-' + category.id">
             <drop-down :subcategories="category.subcategories"></drop-down>
           </div>
         </div>
@@ -45,7 +43,15 @@ export default {
 
   },
   mounted() {
+    $(document).on("mouseover", ".nav-category", function () {
 
+      let id = $(this).attr("category-id");
+      $("#dropdown-" + id).removeClass("hide");
+
+      $(document).on("mouseout", ".nav-category", function () {
+        $("#dropdown-" + id).addClass("hide");
+      });
+    });
   }
 }
 </script>

@@ -9,7 +9,7 @@
     margin-left: -3px;
 }
 
-.nav-categories{
+.nav-category{
     height: 47px;
     width: 18.66666667%;
     flex: 0 0 auto;
@@ -56,3 +56,4 @@
 .nav-dropdown-item{
     color: white;
 }
+
