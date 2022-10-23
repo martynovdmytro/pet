@@ -1,6 +1,6 @@
 <template>
   <div class="nav-dropdown-list">
-    <router-link v-for="subcategory in subcategories" :to="'/api/subcategory/' + subcategory.id" class="nav-dropdown-item">{{ subcategory.name }}</router-link>
+    <router-link v-for="subcategory in subcategories" :to="'/api/subcategory/' + subcategory.slug" class="nav-dropdown-item">{{ subcategory.name }}</router-link>
   </div>
 </template>
 

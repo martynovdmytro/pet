@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\SubcategoryResource;
 use App\Models\Subcategory;
 use Illuminate\Http\Request;
 
@@ -34,11 +35,12 @@ class SubcategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        $subcategory = Subcategory::first();
 
-        echo $subcategory->images;
+        $subcategory = Subcategory::where('slug', '=', $slug);
+
+        ddd($subcategory->images);
     }
 
     /**

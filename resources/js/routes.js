@@ -14,7 +14,7 @@ export default {
             component: Home
         },
         {
-            path: '/api/subcategory/:id',
+            path: '/api/subcategory/:slug',
             component: Subcategory
         }
     ]
