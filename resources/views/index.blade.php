@@ -16,7 +16,7 @@
     </header>
 
     <nav class="navbar">
-        <navbar-component :categories="{{ json_encode($categories) }}"></navbar-component>
+        <navbar-component :categories="{{ $categories }}"></navbar-component>
     </nav>
 
     <section class="container-fluid">

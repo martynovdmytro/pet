@@ -36,7 +36,9 @@ class SubcategoryController extends Controller
      */
     public function show($id)
     {
-        echo $id;
+        $subcategory = Subcategory::first();
+
+        echo $subcategory->images;
     }
 
     /**
