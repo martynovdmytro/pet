@@ -16,8 +16,6 @@
     text-align: center;
     color: white;
     margin: 1px;
-    border-style: solid;
-    border-color: #31d2f2;
 }
 
 .nav-link-element{
@@ -53,7 +51,18 @@
     z-index: 1;
 }
 
+.nav-dropdown-list{
+    margin-left: -16px;
+    width: 111px;
+}
+
 .nav-dropdown-item{
+    text-decoration: none;
     color: white;
+    display: block;
+}
+
+.nav-dropdown-item:hover{
+    background-color: #adb5bd;
 }
 

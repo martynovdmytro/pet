@@ -44,8 +44,8 @@ export default {
   },
   mounted() {
     $(document).on("mouseover", ".nav-category", function () {
-
       let id = $(this).attr("category-id");
+
       $("#dropdown-" + id).removeClass("hide");
 
       $(document).on("mouseout", ".nav-category", function () {
