@@ -1,7 +1,7 @@
 <template>
   <div class="col-10 content-box-left">
     <breadcrumbs></breadcrumbs>
-    <div class="col-12 router-view-cointer">
+    <div class="col-12 router-view-container">
       <router-view :key="$route.fullPath"></router-view>
     </div>
   </div>

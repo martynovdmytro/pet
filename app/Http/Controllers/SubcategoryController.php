@@ -30,7 +30,7 @@ class SubcategoryController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Return a collection of category by slug.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response

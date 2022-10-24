@@ -8,6 +8,7 @@
     min-height: 23px;
 }
 
-.router-view-cointer{
+.router-view-container{
+    min-height: 490px;
     margin-top: 10px;
 }

@@ -14,7 +14,7 @@ class ImageFactory extends Factory
     public function definition()
     {
         return [
-            'link' => "https://via.placeholder.com/300",
+            'link' => "https://via.placeholder.com/150",
             'year' => $this->faker->year,
             'created_at' => $this->faker->date()
         ];
