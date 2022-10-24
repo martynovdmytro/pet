@@ -3,3 +3,11 @@
     min-height: 500px;
     margin: 10px;
 }
+
+.breadcrumbs-container{
+    min-height: 23px;
+}
+
+.router-view-cointer{
+    margin-top: 10px;
+}
