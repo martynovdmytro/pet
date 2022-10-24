@@ -64,44 +64,4 @@ export default {
 }
 </script>
 
-<style>
-
-.subcategory-container{
-  min-height: 500px;
-}
-
-.image-header{
-
-}
-
-.subcategory-name{
-
-}
-
-.image-attributes{
-
-}
-
-.image-container{
-  min-height: 450px;
-}
-
-.image-carousel{
-
-}
-
-.image-display{
-
-}
-
-.image-carousel-item{
-  height: 100px;
-}
-
-.image-hashtags{
-  /*border-style: solid;*/
-  /*border-color: #1a1e21;*/
-  min-height: 30px;
-}
-
-</style>
+<style src="./css/subcategory.css" ref="stylesheet"></style>
