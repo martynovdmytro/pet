@@ -37,10 +37,29 @@ class SubcategoryController extends Controller
      */
     public function show($slug)
     {
+        $response = array();
 
-        $subcategory = Subcategory::where('slug', '=', $slug);
+        $subcategory = Subcategory::where('slug', $slug)->first();
 
-        ddd($subcategory->images);
+        if (!empty($subcategory)) {
+            $images = $subcategory->images;
+
+            foreach ($images as $image) {
+                $artists [] = $image->artists;
+            }
+
+            $response['data'] = [
+                'subcategory' => $subcategory,
+                'images' => $images,
+                'artists' => $artists
+            ];
+
+            $response['status'] = 'success';
+        } else {
+            $response['status'] = 'bad request';
+        }
+
+        return $response;
     }
 
     /**

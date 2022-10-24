@@ -1,6 +1,6 @@
 <template>
   <div class="col-9 content-box-left">
-    <router-view></router-view>
+    <router-view :key="$route.fullPath"></router-view>
   </div>
 </template>
 

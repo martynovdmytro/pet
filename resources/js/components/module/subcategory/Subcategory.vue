@@ -1,6 +1,6 @@
 <template>
   <div>
-    {{ $route.params.id }}
+    {{ response }}
   </div>
 </template>
 
@@ -11,11 +11,24 @@ export default {
   ],
   data () {
     return {
-      id: this.$route.params.id
+      response: null
     }
   },
   methods: {
-
+    getData(){
+      axios({
+        url: 'http://pet.local/api/subcategory/' + this.$route.params.slug,
+        method: 'get',
+      }).then(response => {
+        this.response = response.data
+      });
+    }
+  },
+  created() {
+    this.getData();
+  },
+  mounted() {
+    console.log(this.response);
   }
 }
 </script>
