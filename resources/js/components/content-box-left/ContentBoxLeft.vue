@@ -1,6 +1,6 @@
 <template>
   <div class="col-10 content-box-left">
-    <div class="col-12 breadcrumbs-container">Breadcrumbs</div>
+    <breadcrumbs></breadcrumbs>
     <div class="col-12 router-view-cointer">
       <router-view :key="$route.fullPath"></router-view>
     </div>
@@ -8,8 +8,11 @@
 </template>
 
 <script>
+import Breadcrumbs from "./template/Breadcrumbs";
 export default {
-
+  components: {
+    Breadcrumbs
+  }
 }
 
 </script>
