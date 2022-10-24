@@ -14,7 +14,6 @@ export default {
     Breadcrumbs
   }
 }
-
 </script>
 
 <style src="./css/content-box-left.css" ref="stylesheet"></style>

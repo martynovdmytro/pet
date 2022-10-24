@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="response">
     {{ response }}
   </div>
 </template>
@@ -11,7 +11,7 @@ export default {
   ],
   data () {
     return {
-      response: null
+      response: null,
     }
   },
   methods: {
@@ -19,16 +19,18 @@ export default {
       axios({
         url: 'http://pet.local/api/subcategory/' + this.$route.params.slug,
         method: 'get',
-      }).then(response => {
-        this.response = response.data
+      }).then(
+          response => {
+            if (response.status == 200) {
+              this.response = response.data;
+            } else {
+              alert("Oops, something wrong");
+            }
       });
     }
   },
   created() {
     this.getData();
-  },
-  mounted() {
-    console.log(this.response);
   }
 }
 </script>
