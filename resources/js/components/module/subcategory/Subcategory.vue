@@ -10,20 +10,17 @@
     </div>
     <div class="row image-container">
       <image-carousel :images="response.data.images"></image-carousel>
-      <div class="image-display col-8">
-        TODO: DISPLAY IMAGE
-        <div class="image-hashtags col-12">
-          TODO: HASHTAGS
-        </div>
-      </div>
+      <image-display></image-display>
     </div>
   </div>
 </template>
 
 <script>
 import ImageCarousel from "./template/ImageCarousel";
+import ImageDisplay from "./template/ImageDisplay";
 export default {
   components: {
+    ImageDisplay,
     ImageCarousel
 
   },
