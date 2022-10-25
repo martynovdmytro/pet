@@ -14,7 +14,7 @@ class ImageFactory extends Factory
     public function definition()
     {
         return [
-            'link' => "/img/beautiful_granite_lake_landscape_mountain_nature_600429.jpg",
+            'link' => "/img/Bios_HMNI_Spraydaily_12.jpeg",
             'year' => $this->faker->year,
             'created_at' => $this->faker->date()
         ];

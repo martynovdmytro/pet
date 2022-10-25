@@ -5,7 +5,7 @@
         <h1>{{ response.data.subcategory.name }}</h1>
       </div>
       <div class="col-8">
-        <h1>2022</h1>
+        <h1>BIOS</h1>
       </div>
     </div>
     <div class="row image-container">
