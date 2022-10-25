@@ -18,5 +18,16 @@ export default {
   props: [
       'images'
   ],
+  data () {
+    return {
+
+    }
+  },
+  mounted() {
+    $(document).on("click", ".image-preview-item", function () {
+      let link = $(this).attr("src");
+      alert(link);
+    });
+  }
 }
 </script>
