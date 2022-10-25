@@ -3,32 +3,14 @@
     min-height: 500px;
 }
 
-.image-header{
-
-}
-
-.subcategory-name{
-
-}
-
-.image-attributes{
-
-}
-
 .image-container{
     min-height: 450px;
 }
 
-.image-carousel{
-
-}
-
-.image-display{
-
-}
-
-.image-carousel-item{
-    height: 100px;
+.image-preview-item{
+    height: auto;
+    width: 90%;
+    margin: 3px;
 }
 
 .image-hashtags{

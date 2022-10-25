@@ -1,10 +1,10 @@
 <template>
   <div v-if="response" class="container-fluid subcategory-container">
-    <div class="row image-header">
-      <div class="subcategory-name col-4">
+    <div class="row">
+      <div class="col-4">
         <h1>{{ response.data.subcategory.name }}</h1>
       </div>
-      <div class="image-attributes col-8">
+      <div class="col-8">
         <h1>2022</h1>
       </div>
     </div>
