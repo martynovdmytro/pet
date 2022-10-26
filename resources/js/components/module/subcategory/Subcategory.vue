@@ -45,7 +45,7 @@ export default {
               alert("Oops, something wrong");
             }
       });
-    }
+    },
   },
   created() {
     this.getData();

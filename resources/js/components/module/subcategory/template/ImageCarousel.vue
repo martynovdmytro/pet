@@ -3,7 +3,7 @@
     <div class="row col-12">
       <div class="col-10">
         <div v-for="image in images" class="col-12">
-          <img :src="image.link" class="image-preview-item hover-shadow">
+          <img :src="image.link" @click="test" class="image-preview-item hover-shadow">
         </div>
       </div>
       <div class="col-2">
@@ -20,14 +20,20 @@ export default {
   ],
   data () {
     return {
-
+      link: null
+    }
+  },
+  methods: {
+    test(){
+      this.link = event.target.getAttribute('src');
+      // this.$emit('test', this.link);
     }
   },
   mounted() {
-    $(document).on("click", ".image-preview-item", function () {
-      let link = $(this).attr("src");
-      alert(link);
-    });
+    // $(document).on("click", ".image-preview-item", function () {
+    //   let link = $(this).attr("src");
+    //   alert(link);
+    // });
   }
 }
 </script>
