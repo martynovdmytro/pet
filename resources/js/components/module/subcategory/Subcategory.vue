@@ -10,7 +10,7 @@
     </div>
     <div class="row image-container">
       <image-carousel :images="response.data.images" @image-link="setImageLink"></image-carousel>
-      <image-display></image-display>
+      <image-display :link="imgLink"></image-display>
     </div>
   </div>
 </template>
@@ -30,6 +30,7 @@ export default {
   data () {
     return {
       response: null,
+      imgLink: null
     }
   },
   methods: {
@@ -46,8 +47,8 @@ export default {
             }
       });
     },
-    setImageLink(s){
-      console.log(s);
+    setImageLink(link){
+      this.imgLink = link;
     }
   },
   created() {
