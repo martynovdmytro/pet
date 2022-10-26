@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="row image-container">
-      <image-carousel :images="response.data.images"></image-carousel>
+      <image-carousel :images="response.data.images" @image-link="setImageLink"></image-carousel>
       <image-display></image-display>
     </div>
   </div>
@@ -46,6 +46,9 @@ export default {
             }
       });
     },
+    setImageLink(s){
+      console.log(s);
+    }
   },
   created() {
     this.getData();
