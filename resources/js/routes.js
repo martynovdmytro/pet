@@ -11,11 +11,12 @@ export default {
     routes: [
         {
             path: '/',
-            component: Home
+            component: Home,
+
         },
         {
-            path: '/api/subcategory/:slug',
-            component: Subcategory
+            path: '/subcategory/:slug',
+            component: Subcategory,
         }
     ]
 }

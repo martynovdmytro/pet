@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/{any?}', 'index', [
+Route::view('/{any}', 'index', [
     'categories' => CategoryController::index()
-]);
+])->where('any', '(.*)');
 
