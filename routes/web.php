@@ -16,6 +16,3 @@ Route::view('/{any?}', 'index', [
     'categories' => CategoryController::index()
 ]);
 
-Route::view('/admin/admin/{any?}', 'admin', [
-    // TODO: отредактировать линк
-]);

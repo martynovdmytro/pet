@@ -1,6 +1,6 @@
 <template>
-  <div class="col-8">
-    <img :src="link">
+  <div class="col-9">
+    <img :src="link" class="image-display-item">
     <div class="image-hashtags col-12">
       TODO: HASHTAGS
     </div>

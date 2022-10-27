@@ -1,5 +1,5 @@
 <template>
-  <div class="col-4">
+  <div class="col-3">
     <div class="row col-12">
       <div class="col-10">
         <div v-for="image in images" class="col-12">
