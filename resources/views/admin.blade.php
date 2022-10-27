@@ -15,13 +15,17 @@
         <header-component></header-component>
     </header>
 
-    <nav class="navbar">
-        <router-link to="/admin/image/upload">ZALUPA</router-link>
-    </nav>
+    <section class="container-fluid section">
+        <div class="row">
+            <div class="col-2 admin-left-panel">
 
-    <section class="container-fluid">
-        <div class="row col-12 content-box-parent">
-            <router-view></router-view>
+            </div>
+            <div class="col-8 admin-content">
+
+            </div>
+            <div class="col-2 admin-right-panel">
+
+            </div>
         </div>
     </section>
 
@@ -33,3 +37,10 @@
 
 </body>
 </html>
+<script>
+    import Content from "../js/components/admin/content/ContentBox";
+    import ContentBox from "../js/components/admin/content-box/ContentBox";
+    export default {
+        components: {ContentBox, Content}
+    }
+</script>

@@ -8,7 +8,7 @@ nav{
 }
 
 section{
-    min-height: 520px;
+    min-height: 580px;
 }
 
 .content-box-parent{
@@ -24,3 +24,21 @@ footer{
 .hide{
     display: none;
 }
+
+/* admin */
+
+.admin-left-panel{
+    height: 580px;
+    background-color: red;
+}
+
+.admin-content{
+    height: 580px;
+    background-color: #20c997;
+}
+
+.admin-right-panel{
+    height: 580px;
+    background-color: blueviolet;
+}
+
