@@ -16,3 +16,9 @@ Route::view('/{any}', 'index', [
     'categories' => CategoryController::index()
 ])->where('any', '(.*)');
 
+//Route::get('/{any}', function (){
+//    return view('index', [
+//        CategoryController::class, 'index'
+//    ]);
+//})->where('any', '(.*)');
+

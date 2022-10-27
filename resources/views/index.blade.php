@@ -11,6 +11,7 @@
 </head>
 <body>
 <div id="app">
+
     <header>
         <header-component></header-component>
     </header>

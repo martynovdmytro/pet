@@ -20,7 +20,7 @@ export default {
   ],
   data () {
     return {
-      link: null
+      link: null,
     }
   },
   methods: {

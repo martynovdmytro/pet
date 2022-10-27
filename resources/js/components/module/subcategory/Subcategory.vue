@@ -1,10 +1,10 @@
 <template>
   <div v-if="response" class="container-fluid subcategory-container">
     <div class="row">
-      <div class="col-4">
+      <div class="col-3">
         <h1>{{ response.data.subcategory.name }}</h1>
       </div>
-      <div class="col-8">
+      <div class="col-9">
         <h1>BIOS</h1>
       </div>
     </div>
