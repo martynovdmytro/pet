@@ -11,7 +11,6 @@
 </head>
 <body>
 <div id="app">
-
     <header>
         <header-component></header-component>
     </header>
@@ -26,7 +25,6 @@
             <content-box-right></content-box-right>
         </div>
     </section>
-
 </div>
 
 <footer>

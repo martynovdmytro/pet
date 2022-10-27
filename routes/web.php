@@ -14,11 +14,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/{any}', 'index', [
     'categories' => CategoryController::index()
-])->where('any', '(.*)');
+])->where('any',  '^(?!admin).*$');
 
-//Route::get('/{any}', function (){
-//    return view('index', [
-//        CategoryController::class, 'index'
-//    ]);
-//})->where('any', '(.*)');
+Route::view('/admin/{any?}', 'admin');
 

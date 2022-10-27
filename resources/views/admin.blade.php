@@ -16,12 +16,12 @@
     </header>
 
     <nav class="navbar">
-        <h1>ADMIN</h1>
+        <router-link to="/admin/image/upload">ZALUPA</router-link>
     </nav>
 
     <section class="container-fluid">
         <div class="row col-12 content-box-parent">
-            <h1>ADMIN</h1>
+            <router-view></router-view>
         </div>
     </section>
 
