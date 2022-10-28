@@ -1,6 +1,6 @@
 <template>
-  <div>
-    ZALUPA
+  <div class="container-fluid">
+    TODO: MAIN MENU
   </div>
 </template>
 

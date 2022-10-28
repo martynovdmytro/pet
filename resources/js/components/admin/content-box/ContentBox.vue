@@ -1,10 +1,10 @@
 <template>
   <div class="container">
-    <div>
+    <div class="info-panel">
       <h1>XYU</h1>
     </div>
-    <div class="col-10 offset-1 content-display">
-      PIZDA
+    <div class="col-12 content-display">
+      TODO: MAIN SCREEN
     </div>
   </div>
 </template>
@@ -19,7 +19,6 @@ export default {
 .content-display{
   border-style: solid;
   border-color: #1a1e21;
-  height: 400px;
-  margin-top: ;
+  min-height: 490px;
 }
 </style>

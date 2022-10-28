@@ -35,10 +35,11 @@ footer{
 }
 
 .admin-content-box{
-    height: 580px;
+    min-height: 580px;
     width: 79%;
     border-style: solid;
     border-color: black;
+    margin-bottom: 5px;
 
 }
 
