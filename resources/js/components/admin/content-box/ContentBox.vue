@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="info-panel">
-      <h1>XYU</h1>
+      <h1>TODO: INFO PANEL</h1>
     </div>
     <div class="col-12 content-display">
       TODO: MAIN SCREEN
