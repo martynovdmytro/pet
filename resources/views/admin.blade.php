@@ -15,17 +15,11 @@
         <header-component></header-component>
     </header>
 
-    <section class="container-fluid section">
+    <section class="container-fluid section section-admin">
         <div class="row">
-            <div class="col-2 admin-left-panel">
-                <left-panel></left-panel>
-            </div>
-            <div class="admin-content-box">
-                <content-box></content-box>
-            </div>
-            <div class="col-1 admin-right-panel">
-                <right-panel></right-panel>
-            </div>
+            <left-panel></left-panel>
+            <content-box></content-box>
+            <right-panel></right-panel>
         </div>
     </section>
 

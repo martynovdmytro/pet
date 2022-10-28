@@ -27,27 +27,8 @@ footer{
 
 /* admin */
 
-.admin-left-panel{
-    height: 580px;
-    border-style: solid;
-    border-color: black;
-    margin-bottom: 5px;
-}
 
-.admin-content-box{
-    min-height: 580px;
-    width: 79%;
-    border-style: solid;
-    border-color: black;
-    margin-bottom: 5px;
 
-}
 
-.admin-right-panel{
-    height: 580px;
-    border-style: solid;
-    border-color: black;
-    margin-bottom: 5px;
-    width: 4.3333%;
-}
+
 

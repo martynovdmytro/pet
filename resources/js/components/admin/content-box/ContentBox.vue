@@ -1,10 +1,10 @@
 <template>
-  <div class="container">
+  <div class="admin-content-box">
     <div class="info-panel">
       <h1>TODO: INFO PANEL</h1>
     </div>
     <div class="col-12 content-display">
-      TODO: MAIN SCREEN
+      <router-view :key="$route.fullPath"></router-view>
     </div>
   </div>
 </template>
@@ -16,9 +16,18 @@ export default {
 </script>
 
 <style>
+.admin-content-box{
+  min-height: 580px;
+  width: 79%;
+  margin-bottom: 5px;
+
+}
+
+.info-panel{
+  min-height: 50px;
+}
+
 .content-display{
-  border-style: solid;
-  border-color: #1a1e21;
   min-height: 490px;
 }
 </style>
