@@ -29,16 +29,24 @@ footer{
 
 .admin-left-panel{
     height: 580px;
-    background-color: red;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 5px;
 }
 
-.admin-content{
+.admin-content-box{
     height: 580px;
-    background-color: #20c997;
+    width: 80%;
+    border-style: solid;
+    border-color: black;
+
 }
 
 .admin-right-panel{
     height: 580px;
-    background-color: blueviolet;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 5px;
+    width: 3.3333%;
 }
 

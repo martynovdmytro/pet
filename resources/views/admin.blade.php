@@ -18,13 +18,13 @@
     <section class="container-fluid section">
         <div class="row">
             <div class="col-2 admin-left-panel">
-
+                <left-panel></left-panel>
             </div>
-            <div class="col-8 admin-content">
-
+            <div class="admin-content-box">
+                <content-box></content-box>
             </div>
-            <div class="col-2 admin-right-panel">
-
+            <div class="col-1 admin-right-panel">
+                <right-panel></right-panel>
             </div>
         </div>
     </section>
@@ -37,10 +37,3 @@
 
 </body>
 </html>
-<script>
-    import Content from "../js/components/admin/content/ContentBox";
-    import ContentBox from "../js/components/admin/content-box/ContentBox";
-    export default {
-        components: {ContentBox, Content}
-    }
-</script>
